@@ -31,6 +31,16 @@ public class Botte extends Probleme {
 		}
 		return nom;
 	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		
+		if (getClass() == obj.getClass() && obj != null) {
+			Botte botte = (Botte) obj;
+			return botte.equals(botte);
+		}
+		return false;
 
+	}
 
 }

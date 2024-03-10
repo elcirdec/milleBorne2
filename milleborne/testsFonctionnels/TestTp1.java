@@ -1,14 +1,22 @@
 package testsFonctionnels;
 
-import static org.junit.jupiter.api.Assertions.*;
+import cartes.*;
+import cartes.Probleme.Type;
+import jeu.*;
 
-import org.junit.jupiter.api.Test;
+public class TestTp1 {
 
-class TestTp1 {
+	public static void main(String[] args) {
+		Sabot sabot = new Sabot();
+		sabot.ajouterFamilleCarte(new Attaque(3, Type.ACCIDENT), new Parade(3, Type.ACCIDENT),
+				new Botte(1, Type.ACCIDENT));
 
-	@Test
-	void test() {
-		fail("Not yet implemented");
+		int nb = sabot.getNbCartes();
+		for (int i = 0; i < nb; i++) {
+			sabot.piocher();
+		}
+
+
 	}
 
 }

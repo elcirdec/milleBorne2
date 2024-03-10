@@ -31,4 +31,15 @@ public class Parade extends Bataille {
 		}
 		return nom;
 	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		
+		if (getClass() == obj.getClass() && obj != null) {
+			Parade par = (Parade) obj;
+			return par.equals(par);
+		}
+		return false;
+
+	}
 }

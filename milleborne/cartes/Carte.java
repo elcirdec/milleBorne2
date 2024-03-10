@@ -4,7 +4,7 @@ public abstract class Carte {
 	private int nombre;
 	
 	public Carte(int nombre) {
-		super();
+		
 		this.nombre = nombre;
 	}
 

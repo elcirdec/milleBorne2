@@ -5,7 +5,7 @@ public class Attaque extends Bataille {
 	public Attaque(int nombre, Type type) {
 		super(nombre, type);
 	}
-	
+
 	@Override
 	public String toString() {
 
@@ -23,7 +23,7 @@ public class Attaque extends Bataille {
 		case ACCIDENT:
 			nom = "Accident";
 			break;
-			
+
 		case FEU:
 			nom = " Feu rouge";
 			break;
@@ -31,4 +31,17 @@ public class Attaque extends Bataille {
 		}
 		return nom;
 	}
+
+	@Override
+	public boolean equals(Object obj) {
+		
+		if (getClass() == obj.getClass() && obj != null) {
+			Attaque atq = (Attaque) obj;
+			return atq.equals(atq);
+		}
+		return false;
+
+	}
+
+
 }

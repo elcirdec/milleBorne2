@@ -16,6 +16,10 @@ public class Sabot implements Iterable<Carte>{
 		this.sabot= new Carte[110];
 	}
 
+	public int getNbCartes() {
+		return nbCartes;
+	}
+	
 	public boolean estVide() {
 		return nbCartes==0;
 	}
