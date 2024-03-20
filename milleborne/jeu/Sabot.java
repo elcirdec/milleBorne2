@@ -50,7 +50,7 @@ public class Sabot implements Iterable<Carte>{
 		return new Iter();
 	}
 
-	public class Iter implements Iterator<Carte>{
+	private class Iter implements Iterator<Carte>{
 
 		private int indiceIterateur = 0;
 		private boolean nextEffectue = false;

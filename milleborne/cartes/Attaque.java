@@ -37,7 +37,7 @@ public class Attaque extends Bataille {
 		
 		if (getClass() == obj.getClass() && obj != null) {
 			Attaque atq = (Attaque) obj;
-			return atq.equals(atq);
+			return type.equals(atq.getType());
 		}
 		return false;
 

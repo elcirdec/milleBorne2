@@ -37,7 +37,7 @@ public class Botte extends Probleme {
 		
 		if (getClass() == obj.getClass() && obj != null) {
 			Botte botte = (Botte) obj;
-			return botte.equals(botte);
+			return type.equals(botte.getType());
 		}
 		return false;
 

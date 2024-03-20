@@ -37,7 +37,7 @@ public class Parade extends Bataille {
 		
 		if (getClass() == obj.getClass() && obj != null) {
 			Parade par = (Parade) obj;
-			return par.equals(par);
+			return type.equals(par.getType());
 		}
 		return false;
 
