@@ -6,7 +6,7 @@ import java.util.List;
 
 import cartes.Carte;
 
-public class MainAsListe implements Main{
+public class MainAsListe implements IMain{
 	
 	List<Carte> carteListe = new ArrayList<>();
 	
@@ -30,5 +30,15 @@ public class MainAsListe implements Main{
 		carteListe.remove(carte);
 		
 	}
+	
+	@Override
+	public String toString() {
+		return carteListe.toString();
+	}
+	
+	
+	
+	
+	
 
 }
